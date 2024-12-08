@@ -1,0 +1,65 @@
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charset="utf-8" />
+      <title>Infotech Chat</title>
+      <link href="/css/lib/adminlte.min.css" type="text/css" rel="stylesheet" />
+      <link href="/css/lib/solid.min.css" type="text/css" rel="stylesheet" />
+      <link href="/css/lib/fontawesome.min.css" type="text/css" rel="stylesheet" />
+   </head>
+   <body class="dark-mode layout-fixed" style="height: auto;">
+      <div class="wrapper">
+         <section class="content">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="card card-primary card-outline direct-chat direct-chat-primary direct-chat-contacts-open">
+                        <div class="card-header">
+                           <h3 class="card-title">Infotech Chat</h3>
+                           <div class="card-tools">
+                              <span data-toggle="tooltip" id="rooms_count" title="0 Rooms" class="badge badge-light">0</span>
+                           </div>
+                        </div>
+                        <div class="card-body">
+                           <div class="direct-chat-messages" style="height: 93.6vh;"></div>
+                           <!--/.direct-chat-messages-->
+                           <div class="direct-chat-contacts" id="direct_chat_contacts" style="height: 93.6vh;">
+                              <ul class="contacts-list" id="contacts_list">
+                                 <li>
+                                    <a href="#">
+                                       <i class="direct-chat-img bg-gray d-flex justify-content-center align-items-center">
+                                       З..
+                                       </i>
+                                       <div class="contacts-list-info">
+                                          <span class="contacts-list-name">
+                                            Завантажуємо...
+                                          <small class="contacts-list-date float-right">...</small>
+                                          </span>
+                                          <span class="contacts-list-msg">Завантажуємо...</span>
+                                       </div>
+                                    </a>
+                                 </li>
+                              </ul>
+                              <input class="d-none" id="room_name" type="text" multiple="false" value="room1">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <script src="/js/lib/utf8.js"></script>
+      <script src="/js/lib/bert.js"></script>
+      <script src="/js/lib/heart.js"></script>
+      <script src="/js/lib/ieee754.js"></script>
+      <script src="/js/lib/n2o.js"></script>
+      <script src="/js/lib/nitro.js"></script>
+      <script src="/js/lib/jquery.min.js"></script>
+      <script src="/js/lib/adminlte.min.js"></script>
+      <script src="/js/lib/bootstrap.bundle.min.js"></script>
+      <script>host = location.hostname; port = 8002; debug = false; persistent = true;</script>
+      <!-- <script>$io.do = function(r) { console.log(r); };</script> -->
+      <script>protos = [$bert]; N2O_start();</script>
+   </body>
+</html>

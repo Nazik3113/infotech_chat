@@ -1,0 +1,83 @@
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charset="utf-8" />
+      <title>Infotech Room</title>
+      <link href="/css/lib/adminlte.min.css" type="text/css" rel="stylesheet" />
+      <link href="/css/lib/solid.min.css" type="text/css" rel="stylesheet" />
+      <link href="/css/lib/fontawesome.min.css" type="text/css" rel="stylesheet" />
+   </head>
+   <body class="dark-mode layout-fixed" style="height: auto;">
+      <div class="wrapper">
+         <section class="content">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="card card-primary card-outline direct-chat direct-chat-primary direct-chat-contacts-open">
+                        <div class="card-header">
+                           <h3 id="chat_title" class="card-title">Infotech Chat</h3>
+                           <div class="card-tools">
+                              <span data-toggle="tooltip" id="messages_count" title="3 Messages" class="badge badge-light">0</span>
+                              <a href="/index.html" class="btn btn-tool">
+                                  <i class="fas fa-times"></i>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="card-body">
+                           <div class="direct-chat-messages" id="direct_chat_messages" style="height: 88vh;">
+                              <div class="direct-chat-msg">
+                                 <div class="direct-chat-infos clearfix">
+                                    <span class="direct-chat-name float-left">Завантажуємо...</span>
+                                    <span class="direct-chat-timestamp float-right">...</span>
+                                 </div>
+                                 <i class="direct-chat-img bg-gray d-flex justify-content-center align-items-center">
+                                 З..
+                                 </i>
+                                 <div class="direct-chat-text">
+                                    Завантажуємо...
+                                 </div>
+                              </div>
+                              <div class="direct-chat-msg right">
+                                 <div class="direct-chat-infos clearfix">
+                                    <span class="direct-chat-name float-right">Завантажуємо...</span>
+                                    <span class="direct-chat-timestamp float-left">...</span>
+                                 </div>
+                                 <i class="direct-chat-img bg-gray d-flex justify-content-center align-items-center">
+                                 З..
+                                 </i>
+                                 <div class="direct-chat-text">
+                                    Завантажуємо...
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--/.direct-chat-messages-->
+                        <div class="card-footer">
+                           <form style="margin-bottom: 0;" onsubmit="event.preventDefault();document.getElementById('send').click();">
+                              <div class="input-group">
+                                 <input type="text" id="message" name="message" placeholder="Напишіть повідомлення..." class="form-control">
+                                 <span class="input-group-append">
+                                 <button id="send" type="button" class="btn btn-primary">Надіслати</button>
+                                 </span>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </section>
+      <script src="/js/lib/utf8.js"></script>
+      <script src="/js/lib/bert.js"></script>
+      <script src="/js/lib/heart.js"></script>
+      <script src="/js/lib/ieee754.js"></script>
+      <script src="/js/lib/n2o.js"></script>
+      <script src="/js/lib/nitro.js"></script>
+      <script src="/js/lib/jquery.min.js"></script>
+      <script src="/js/lib/adminlte.min.js"></script>
+      <script src="/js/lib/bootstrap.bundle.min.js"></script>
+      <script>host = location.hostname; port = 8002; debug = false; persistent = true;</script>
+      <!-- <script>$io.do = function(r) { console.log(r); };</script> -->
+      <script>protos = [$bert]; N2O_start();</script>
+   </body>
+</html>

@@ -1,0 +1,10 @@
+services:
+  infotech_chat:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8002:8002
+      - 8004:8004
+    environment:
+      MY_POD_IP: "127.0.0.1"
